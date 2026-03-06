@@ -1,13 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const homePath = basePath || "/";
+
   const handleStartApplying = (event) => {
-    if (window.location.pathname !== "/") return;
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+    if (currentPath !== homePath) return;
     event.preventDefault();
     const target = document.getElementById("featured-jobs");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
-      window.history.replaceState(null, "", "/#featured-jobs");
+      window.history.replaceState(
+        null,
+        "",
+        `${import.meta.env.BASE_URL}#featured-jobs`,
+      );
     }
   };
 

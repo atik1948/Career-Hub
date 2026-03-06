@@ -26,38 +26,41 @@ const withSuspense = (component) => (
   </Suspense>
 );
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage></ErrorPage>,
-    children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-      },
-      {
-        path: "/applied-jobs",
-        element: withSuspense(<AppliedJobs />),
-      },
-      {
-        path: "/blog",
-        element: withSuspense(<Blog />),
-        loader: () => blogsData,
-      },
-      {
-        path: "/blog/:slug",
-        element: withSuspense(<BlogPost />),
-        loader: () => blogsData,
-      },
-      {
-        path: "/job/:id",
-        element: withSuspense(<JobDetails />),
-        loader: () => jobsData,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage></ErrorPage>,
+      children: [
+        {
+          path: "/",
+          element: <Home></Home>,
+        },
+        {
+          path: "/applied-jobs",
+          element: withSuspense(<AppliedJobs />),
+        },
+        {
+          path: "/blog",
+          element: withSuspense(<Blog />),
+          loader: () => blogsData,
+        },
+        {
+          path: "/blog/:slug",
+          element: withSuspense(<BlogPost />),
+          loader: () => blogsData,
+        },
+        {
+          path: "/job/:id",
+          element: withSuspense(<JobDetails />),
+          loader: () => jobsData,
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+);
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
