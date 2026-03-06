@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "slug": "write-a-cv-that-gets-interviews",
+    "title": "How To Write a CV That Gets Interviews",
+    "excerpt": "A simple structure for writing a clear, results-focused CV recruiters can scan in under 30 seconds.",
+    "author": "CareerHub Team",
+    "published_at": "2026-03-01",
+    "read_time": "6 min read",
+    "tags": ["CV", "Job Search", "Career Growth"],
+    "content": [
+      "Most recruiters scan a CV quickly, so clarity is more valuable than creativity. Keep your summary short and focused on your strongest value.",
+      "Use measurable achievements in each experience bullet. Instead of writing 'worked on projects', write 'delivered 3 projects that reduced support tickets by 25%'.",
+      "For each role, include technologies, ownership, and impact. This makes your profile easier to match against job descriptions.",
+      "Keep formatting consistent and avoid dense paragraphs. A clean one-page CV for early-career candidates is usually enough."
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "remote-job-interview-preparation-checklist",
+    "title": "Remote Job Interview Preparation Checklist",
+    "excerpt": "A practical checklist to prepare your setup, answers, and examples before a remote interview.",
+    "author": "CareerHub Team",
+    "published_at": "2026-02-24",
+    "read_time": "5 min read",
+    "tags": ["Interview", "Remote Work", "Preparation"],
+    "content": [
+      "Treat a remote interview like an on-site interview. Test your camera, microphone, internet, and meeting link at least one day before.",
+      "Prepare short stories using the STAR method: situation, task, action, result. Keep one story each for leadership, conflict, and problem solving.",
+      "Keep your portfolio, resume, and notes open in separate tabs. This helps you answer quickly without losing flow.",
+      "End the interview with role-specific questions. Ask about success metrics for the first 90 days and team collaboration style."
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "top-skills-hiring-managers-look-for",
+    "title": "Top Skills Hiring Managers Look For in 2026",
+    "excerpt": "Beyond technical tools, these communication and execution skills help candidates stand out.",
+    "author": "CareerHub Team",
+    "published_at": "2026-02-16",
+    "read_time": "7 min read",
+    "tags": ["Skills", "Hiring Trends", "Career Growth"],
+    "content": [
+      "Technical skills open the door, but communication and ownership usually decide final selection. Companies want people who can turn requirements into outcomes.",
+      "Problem framing is a high-value skill. Strong candidates clarify assumptions before implementation and surface trade-offs early.",
+      "Written communication matters more in distributed teams. Clear updates, concise documentation, and status reporting build trust quickly.",
+      "Continuous learning is now expected. Show how you stay current through projects, courses, and practical experimentation."
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "how-to-follow-up-after-an-interview",
+    "title": "How To Follow Up After an Interview",
+    "excerpt": "A follow-up strategy that is polite, professional, and increases your chance of moving forward.",
+    "author": "CareerHub Team",
+    "published_at": "2026-02-09",
+    "read_time": "4 min read",
+    "tags": ["Interview", "Communication", "Job Search"],
+    "content": [
+      "Send a concise thank-you message within 24 hours. Mention one specific discussion point from the interview to make it personal.",
+      "If you do not hear back by the expected timeline, send a short follow-up message. Keep it professional and avoid repeated messages.",
+      "Reinforce your fit by linking your experience to one challenge discussed in the interview.",
+      "Even if the result is negative, respond with appreciation. Professional follow-up helps your long-term network."
+    ]
+  }
+]

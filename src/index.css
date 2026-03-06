@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --bg: #f3f7f8;
+  --surface: #ffffff;
+  --surface-soft: #eef4f5;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --primary: #0f766e;
+  --primary-strong: #115e59;
+  --ring: #99f6e4;
+  --border: #dbe5e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, #d6f5ef 0%, transparent 26%),
+    radial-gradient(circle at 90% 0%, #dbeafe 0%, transparent 28%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-container {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section-wrap {
+  padding-block: 5rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 2.5vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  margin-top: 0.85rem;
+  max-width: 620px;
+  color: var(--text-muted);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(130deg, var(--primary), #0891b2);
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.26);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(8, 145, 178, 0.26);
+  filter: saturate(1.05);
+}
+
+.btn-outline-pro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1.1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+  background: #fff;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-outline-pro:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.surface-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.surface-card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.surface-card-hover:hover {
+  transform: translateY(-3px);
+  border-color: #b6d4d9;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid #b7d6dc;
+  background: #f2fbfb;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 3.8rem;
+  background: linear-gradient(160deg, #edf8f6 0%, #f3f7f8 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: auto auto -90px -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(45, 212, 191, 0.18);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: -70px -50px auto auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+}
